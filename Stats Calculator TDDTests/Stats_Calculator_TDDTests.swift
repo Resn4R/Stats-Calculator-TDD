@@ -32,4 +32,12 @@ final class Stats_Calculator_TDDTests: XCTestCase {
         
         XCTAssertEqual(calculator.getMinimumValue(in: sampleArray), 3)
     }
+    
+    func testGivenAnEmptyArrayReturnsNil() {
+        let calculator = StatCalculator()
+        
+        let sampleArray = [Int]()
+        
+        XCTAssertEqual(calculator.getMinimumValue(in: sampleArray), nil)
+    }
 }

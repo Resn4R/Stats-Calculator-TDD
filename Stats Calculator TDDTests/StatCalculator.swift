@@ -9,7 +9,7 @@ import Foundation
 
 struct StatCalculator {
     
-    func getMinimumValue(in inputArray: [Int]) -> Int {
-        inputArray.min()!
+    func getMinimumValue(in inputArray: [Int]) -> Int? {
+        inputArray.min()
     }
 }
