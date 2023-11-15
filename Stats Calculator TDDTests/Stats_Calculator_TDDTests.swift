@@ -48,4 +48,30 @@ final class Stats_Calculator_TDDTests: XCTestCase {
         
         XCTAssertEqual(calculator.getHighestValue(in: sampleArray), 7)
     }
+    
+    func testGivenAnArrayOfIntsReturnsMinAndMaxInArray() {
+        let calculator = StatCalculator()
+        let sampleArray = [3,7,5,2,-2,6,-6]
+        
+        var stats = [Int?]()
+        stats.append(calculator.getMinimumValue(in: sampleArray))
+        stats.append(calculator.getHighestValue(in: sampleArray))
+        
+        XCTAssertEqual(stats, [-6,7])
+    }
+    
+    func testGivenAnEmptyArrayWhenAskedForCountReturns0() {
+        let calculator = StatCalculator()
+        let sampleArray = [Int]()
+        
+        XCTAssertEqual(calculator.getCount(of: sampleArray), 0)
+    }
+    
+    func testGivenAnArrayWhenAskedForCountNumberOfItems() {
+        let calculator = StatCalculator()
+        
+        let sampleArray = [3,7,5,2,-2,6,-6]
+
+        XCTAssertEqual(calculator.getCount(of: sampleArray), 7)
+    }
 }
