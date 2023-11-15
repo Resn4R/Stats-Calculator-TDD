@@ -74,4 +74,12 @@ final class Stats_Calculator_TDDTests: XCTestCase {
 
         XCTAssertEqual(calculator.getCount(of: sampleArray), 7)
     }
+    
+    func testGivenAnArrayWhenAskedForAvgReturnsAvgOfArray() {
+        let calculator = StatCalculator()
+        
+        let sampleArray = [3,7,5,2,-2,6,-6]
+
+        XCTAssertEqual(calculator.getAverageValue(of: sampleArray), 2.142857142857143)
+    }
 }

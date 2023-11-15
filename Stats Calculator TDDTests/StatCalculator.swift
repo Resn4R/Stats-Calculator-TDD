@@ -20,4 +20,12 @@ struct StatCalculator {
     func getCount(of inputArray: [Int]) -> Int {
         inputArray.count
     }
+    
+    func getAverageValue(of inputArray: [Int]) -> Double? {
+        guard inputArray.count > 0 else { return -1 }
+        
+        let avg: Double = Double(inputArray.reduce(0, +)) / Double(inputArray.count)
+        
+        return avg
+    }
 }
