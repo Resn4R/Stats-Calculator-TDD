@@ -12,4 +12,7 @@ struct StatCalculator {
     func getMinimumValue(in inputArray: [Int]) -> Int? {
         inputArray.min()
     }
+    func getHighestValue(in inputArray: [Int]) -> Int? {
+        inputArray.max()
+    }
 }

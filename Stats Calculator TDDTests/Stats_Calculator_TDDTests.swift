@@ -17,12 +17,12 @@ final class Stats_Calculator_TDDTests: XCTestCase {
      - average value
      */
     
-    func testGivenAnArrayOfIntsReturnsMinimumValue() {
+    func testGivenAnEmptyArrayReturnsNil() {
         let calculator = StatCalculator()
         
-        let sampleArray = [3,7,5,2,-2,6,-6]
+        let sampleArray = [Int]()
         
-        XCTAssertEqual(calculator.getMinimumValue(in: sampleArray), -6)
+        XCTAssertEqual(calculator.getMinimumValue(in: sampleArray), nil)
     }
     
     func testGivenAnArrayWithOneValueReturnsValue() {
@@ -33,11 +33,19 @@ final class Stats_Calculator_TDDTests: XCTestCase {
         XCTAssertEqual(calculator.getMinimumValue(in: sampleArray), 3)
     }
     
-    func testGivenAnEmptyArrayReturnsNil() {
+    func testGivenAnArrayOfIntsReturnsMinimumValue() {
         let calculator = StatCalculator()
         
-        let sampleArray = [Int]()
+        let sampleArray = [3,7,5,2,-2,6,-6]
         
-        XCTAssertEqual(calculator.getMinimumValue(in: sampleArray), nil)
+        XCTAssertEqual(calculator.getMinimumValue(in: sampleArray), -6)
+    }
+    
+    func testGivenAnArrayOfIntsReturnsHighestValue() {
+        let calculator = StatCalculator()
+        
+        let sampleArray = [3,7,5,2,-2,6,-6]
+        
+        XCTAssertEqual(calculator.getHighestValue(in: sampleArray), 7)
     }
 }
