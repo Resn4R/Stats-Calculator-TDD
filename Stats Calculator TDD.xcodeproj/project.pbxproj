@@ -14,6 +14,8 @@
 		4F9960A42B054308004203A8 /* Stats_Calculator_TDDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9960A32B054308004203A8 /* Stats_Calculator_TDDTests.swift */; };
 		4F9960AE2B054308004203A8 /* Stats_Calculator_TDDUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9960AD2B054308004203A8 /* Stats_Calculator_TDDUITests.swift */; };
 		4F9960B02B054308004203A8 /* Stats_Calculator_TDDUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9960AF2B054308004203A8 /* Stats_Calculator_TDDUITestsLaunchTests.swift */; };
+		4F9960BD2B054474004203A8 /* StatCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9960BC2B054474004203A8 /* StatCalculator.swift */; };
+		4F9960BE2B054474004203A8 /* StatCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9960BC2B054474004203A8 /* StatCalculator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,7 @@
 		4F9960A92B054308004203A8 /* Stats Calculator TDDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Stats Calculator TDDUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F9960AD2B054308004203A8 /* Stats_Calculator_TDDUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stats_Calculator_TDDUITests.swift; sourceTree = "<group>"; };
 		4F9960AF2B054308004203A8 /* Stats_Calculator_TDDUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stats_Calculator_TDDUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4F9960BC2B054474004203A8 /* StatCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatCalculator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				4F9960A32B054308004203A8 /* Stats_Calculator_TDDTests.swift */,
+				4F9960BC2B054474004203A8 /* StatCalculator.swift */,
 			);
 			path = "Stats Calculator TDDTests";
 			sourceTree = "<group>";
@@ -259,6 +263,7 @@
 			files = (
 				4F9960952B054306004203A8 /* ContentView.swift in Sources */,
 				4F9960932B054306004203A8 /* Stats_Calculator_TDDApp.swift in Sources */,
+				4F9960BD2B054474004203A8 /* StatCalculator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F9960A42B054308004203A8 /* Stats_Calculator_TDDTests.swift in Sources */,
+				4F9960BE2B054474004203A8 /* StatCalculator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
